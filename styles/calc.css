@@ -3,19 +3,27 @@
     box-sizing: border-box;
     transition: all .3s ease-in-out;
 }
-body{
-    height: 100vh;
+
+.container {
+    min-height: 100vh;
     display: flex;
-    justify-content: center;
-    align-items: center;
-}
-main{
-    max-width: 500px;
-    box-shadow: 0 0 10px #000000de;
+    flex-direction: column;
     padding: 20px;
+    position: relative;
+}
+
+
+/* Responsive main content */
+main {
+    width: 100%;
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0 0 10px #000000ce;
     border-radius: 8px;
     background-color: #f9f9f9;
 }
+
 .logo-cont{
     text-align: center;
 }
@@ -30,18 +38,24 @@ select, input{
     font-size: 1rem;
     margin: 10px 0;
 }
-/* .label{
-    text-align: center;
-} */
+
 label{
     font-weight: 700;
 }
-h1{
+
+/* Responsive typography */
+h1 {
+    font-size: clamp(1.5rem, 4vw, 2rem);
     text-align: center;
     color: #333;
     margin: 0;
     padding:0;
 }
+
+label, select, button {
+    font-size: clamp(0.9rem, 2vw, 1rem);
+}
+
 .calculate{
     text-align: center;
 }
@@ -68,4 +82,54 @@ button:hover{
     border-radius: 10px;
     text-align: center;
     font-size: 1.1rem;
+}
+
+/* Footer styling */
+.calculator-footer {
+    margin-top: 30px;
+    text-align: center;
+    padding: 15px 0;
+    width: 100%;
+    font-size: clamp(0.8rem, 2vw, 0.9rem);
+    color: #555;
+}
+
+.calculator-footer .author-name {
+    color: #4caf50;
+    font-weight: bold;
+}
+
+.calculator-footer a {
+    color: #2196F3;
+    text-decoration: none;
+}
+
+.calculator-footer a:hover {
+    text-decoration: underline;
+}
+
+/* Mobile optimizations */
+@media (max-width: 600px) {
+    main {
+        padding: 15px;
+    }
+    
+    button {
+        width: 50%;
+    }
+    
+    select, input {
+        width: 100%;
+    }
+}
+
+/* For very small screens */
+@media (max-width: 400px) {
+    .logo {
+        max-width: 80px;
+    }
+    
+    h1 {
+        font-size: 1.3rem;
+    }
 }
