@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Multi-Operational Calculator</title>
+    <link rel="stylesheet" href="./styles/calc.css">
+    <link rel="shortcut icon" href="./images/favicon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+</head>
+<body>
+    <main>
+        <div class="logo-cont">
+            <img src="./images/gabby_logo.png" alt="Gabriel Chikwendu Nwofoke®️" class="logo">
+        </div>
+        <h1>Multi-Operational Scientific Calculator</h1>
+        <label for="operation"> Choose Calculation from the dropdown below</label>
+        <select id="operation">
+            <option value="">Select the Maths Operation You want</option>
+            <option value="surface_area_rectangle">Surface Area of a Rectangle</option>
+            <option value="area_triangle">Area of a Triangle</option>
+            <option value="area_square"> Area of a Square</option>
+            <option value="area_trapezoid">Area of a Trapezoid</option>
+            <option value="area_rectangular_prism">Area of a Rectangular Prism</option>
+            <option value="area_circle">Area of a Circle</option>
+            <option value="area_rhombus">Area of a Rhombus</option>
+            <option value="surface_area_cylinder">Surface Area of a Cylinder</option>
+            <option value="perimeter_rectangle">Perimeter of a Rectangle</option>
+            <option value="perimeter_triangle">Perimeter of a triangle</option>
+            <option value="perimeter_square">Perimeter of a Square</option>
+            <option value="circumference_circle">Circumference of a Circle</option>
+            <option value="volume_rectangular_prism">Volume of a Rectangular Prism</option>
+            <option value="volume_cylinder">Volume of a Cylinder</option>
+            <option value="volume_cone">Volume of a Cone</option>
+            <option value="volume_sphere">Volume of a Sphere</option>
+            <option value="volume_pyramid">Volume of Pyramid</option>
+            <option value="pythagorean">Pythagorean Theorem</option>
+            <option value="mean">Mean</option>
+            <option value="median">Median</option>
+            <option value="range">Range</option>
+            <option value="variance">Variance</option>
+            <option value="mean_deviation">Mean Deviation</option>
+            <option value="mode">Mode</option>
+            <option value="standard_deviation">Standard Deviation</option>
+        </select>
+
+        <div id="inputs"></div>
+
+        <div class="calculate"> <button id="calculate">Calculate</button></div>
+
+        <div id="result" class="result" style="display: none;"> Result: <span id="result-value"></span></div>
+    </main>
+    <script src="./scripts/calc.js"></script>
+</body>
+</html>
