@@ -21,3 +21,6 @@ A responsive calculator for advanced computations in:
 ```bash
 git clone https://github.com/Sanctagee/multi-dimensional-calculator.git
 open index.html
+
+[![Live Demo](https://img.shields.io/badge/Demo-Online-green)](https://sanctagee.github.io/multi-dimensional-calculator)
+[![GitHub Last Commit](https://img.shields.io/github/last-commit/Sanctagee/multi-dimensional-calculator)](https://github.com/Sanctagee/multi-dimensional-calculator/commits)
